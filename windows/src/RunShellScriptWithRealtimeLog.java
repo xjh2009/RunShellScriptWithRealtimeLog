@@ -13,10 +13,11 @@ public class RunShellScriptWithRealtimeLog {
         
         // 创建ProcessBuilder对象，并设置脚本路径
         ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", scriptPath);
+                
         
         // 设置工作目录为当前目录
         processBuilder.directory(new File(currentDir));
-              
+        
         try {
             // 启动进程
             Process process = processBuilder.start();
