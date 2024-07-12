@@ -16,9 +16,7 @@ public class RunShellScriptWithRealtimeLog {
         
         // 设置工作目录为当前目录
         processBuilder.directory(new File(currentDir));
-        
-        Process process = null;
-      
+              
         try {
             // 启动进程
             Process process = processBuilder.start();
